@@ -1,0 +1,30 @@
+extend pug-componentes/plantilla.pug
+block contenidos
+	body
+		main 
+			section.banner
+				.banner__container
+				input(type="text", name="nombre", id="nameInput")
+				input(type="number", name="price", id="priceInput")
+				input(type="text", name="caracteristicas", class="caracInput")
+				input(type="text", name="caracteristicas", class="caracInput")
+				input(type="text", name="caracteristicas", class="caracInput")
+				input(type="text", name="image", id="imageInput")
+				button(width= 100, id='botonCargar', onclick="createProduct()") cargar
+				form(action='http://localhost:3000/api/v1/products/', method='POST', enctype='multipart/form-data') 
+					input(type="file", name="foto", id="fotoInput")
+					button(width= 100, type='submit') subir
+				
+				
+				
+					  	  
+			section(id="articulos")
+					
+	 
+
+
+
+
+
+
+
